@@ -169,17 +169,18 @@ def create_prompt(question, df, config, custom):
 
     # Count the number of tokens in the prompt template and question
     prompt_template = """
-Answer the question based on the context below, and if the question
-can't be answered based on the context, say "I don't know"
+        Answer the question based on the context below, and if the question
+        can't be answered based on the context, say "I don't know"
 
-Context: 
+        Context: 
 
-{}
+        {}
 
----
+        ---
 
-Question: {}
-Answer:"""
+        Question: {}
+        Answer:
+    """
 
     current_token_count = len(tokenizer.encode(prompt_template)) + \
                             len(tokenizer.encode(question))

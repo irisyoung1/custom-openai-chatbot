@@ -22,11 +22,11 @@ This project demonstrates a custom chatbot using OpenAI's API and a dataset of 2
    ```bash
    pip install -r requirements.txt
    ```
-2. Add your OpenAI API key in the `.config.env` file
-    ```
-    OPENAI_API_KEY=
-    OPENAI_BASE_URL=
-    ```
+2. Copy the `.config.env.template` file to `.config.env`:
+   ```bash
+   cp .config.env.template .config.env
+   ```
+   Then, fill in your own values for OPENAI_KEY and OPENAI_URL in `.config.env`.
 3. Run `project.ipynb` and follow the steps to interact with the chatbot.
 
 ## Usage
